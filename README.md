@@ -1,4 +1,4 @@
-# SFEMS — Student Forensic Evidence Management System
+# FEMS — Forensic Evidence Management System
 
 SFEMS is a PHP + MySQL/MariaDB web app for managing forensic evidence
 end-to-end: cases → evidence intake → chain of custody → forensic analysis →
