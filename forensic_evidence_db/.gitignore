@@ -1,0 +1,6 @@
+config.php
+migrate_passwords.php
+*.log
+media/*
+!media/.htaccess
+!media/index.html

@@ -1,0 +1,19 @@
+# Uploaded files are untrusted. Never execute anything in this directory,
+# regardless of extension, and don't allow directory listing.
+Options -ExecCGI -Indexes
+RemoveHandler .php .php3 .php4 .php5 .phtml .pl .py .cgi .asp .aspx .jsp .sh .exe
+AddType text/plain .php .php3 .php4 .php5 .phtml .pl .py .cgi .asp .aspx .jsp .sh .exe
+
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php8.c>
+    php_flag engine off
+</IfModule>
+
+<FilesMatch "\.(php|php\d|phtml|pl|py|cgi|asp|aspx|jsp|sh|exe)$">
+    Require all denied
+</FilesMatch>
